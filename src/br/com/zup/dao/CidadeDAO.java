@@ -177,7 +177,6 @@ public class CidadeDAO {
 		while (rs.next()) {
 
 			qtdCidades = rs.getInt(1);
-
 		}
 		if (qtdCidades != 0) {
 			return qtdCidades;

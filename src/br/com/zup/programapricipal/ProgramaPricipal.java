@@ -64,9 +64,7 @@ public class ProgramaPricipal {
 		List<Cidade> cidadesDB = new ArrayList<Cidade>();
 		try {
 			cidadesDB = cidadeDAO.consultaCidades();
-			for (Cidade cidade : cidadesDB) {
-				System.out.println("\n\t" + cidade + "\n");
-			}
+			percorrerEImprimirCidades(cidadesDB);
 		} catch (SQLException e) {
 			System.err.println(e.getMessage());
 		}
